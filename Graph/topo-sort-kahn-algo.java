@@ -1,5 +1,6 @@
 import java.util.*;
-
+//run this code for detection of cycle in directed graph  - since topo sort works only with acyclic graph 
+// just count the no of elements in the sort and if it not match the no of vertices then it is not valid and cycle exists
 class Solution {
 
     public ArrayList<Integer> topoSort(int V,
