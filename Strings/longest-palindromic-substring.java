@@ -35,10 +35,14 @@ class Solution {
             right++;
         }
 
+        // when the loop runs out, left and right point to the index where the characters are unequal, and one step before them will give the valid palindrome length
+        // for when we have to always find length we do: right - left + 1
+        //but since they are one step ahead than required, we subtract -1 in the formula
         int length = right - left - 1;
 
         if (length > maxLen) {
             maxLen = length;
+            //since left is one step behind the actual palindrome when do + 1 so that start of the palindrom is kept track of
             start = left + 1;
         }
     }
