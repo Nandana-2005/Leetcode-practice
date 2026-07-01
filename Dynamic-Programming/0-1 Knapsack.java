@@ -157,6 +157,7 @@ public class ZeroOneKnapsack {
         int[][] dp = new int[n][W + 1];
 
         // Base Case
+      // It starts from the first capacity where the item fits (wt[0]) and fills all remaining capacities with val[0].
         for (int cap = wt[0]; cap <= W; cap++)
             dp[0][cap] = val[0];
 
